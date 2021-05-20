@@ -1,0 +1,21 @@
+C:\Users\Eyael\source\repos\DotNetChampion\ConsoleExample2\bin\Debug\ConsoleExample2.exe.config
+C:\Users\Eyael\source\repos\DotNetChampion\ConsoleExample2\bin\Debug\ConsoleExample2.exe
+C:\Users\Eyael\source\repos\DotNetChampion\ConsoleExample2\bin\Debug\ConsoleExample2.pdb
+C:\Users\Eyael\source\repos\DotNetChampion\ConsoleExample2\obj\Debug\ConsoleExample2.csprojAssemblyReference.cache
+C:\Users\Eyael\source\repos\DotNetChampion\ConsoleExample2\obj\Debug\ConsoleExample2.csproj.CoreCompileInputs.cache
+C:\Users\Eyael\source\repos\DotNetChampion\ConsoleExample2\obj\Debug\ConsoleExample2.exe
+C:\Users\Eyael\source\repos\DotNetChampion\ConsoleExample2\obj\Debug\ConsoleExample2.pdb
+C:\Users\Eyael\Desktop\Pyramid\Pyramid's stuffs\Assignments\WeekOne\DotNetChampion\ConsoleExample2\bin\Debug\ConsoleExample2.exe.config
+C:\Users\Eyael\Desktop\Pyramid\Pyramid's stuffs\Assignments\WeekOne\DotNetChampion\ConsoleExample2\bin\Debug\ConsoleExample2.exe
+C:\Users\Eyael\Desktop\Pyramid\Pyramid's stuffs\Assignments\WeekOne\DotNetChampion\ConsoleExample2\bin\Debug\ConsoleExample2.pdb
+C:\Users\Eyael\Desktop\Pyramid\Pyramid's stuffs\Assignments\WeekOne\DotNetChampion\ConsoleExample2\obj\Debug\ConsoleExample2.csprojAssemblyReference.cache
+C:\Users\Eyael\Desktop\Pyramid\Pyramid's stuffs\Assignments\WeekOne\DotNetChampion\ConsoleExample2\obj\Debug\ConsoleExample2.csproj.CoreCompileInputs.cache
+C:\Users\Eyael\Desktop\Pyramid\Pyramid's stuffs\Assignments\WeekOne\DotNetChampion\ConsoleExample2\obj\Debug\ConsoleExample2.exe
+C:\Users\Eyael\Desktop\Pyramid\Pyramid's stuffs\Assignments\WeekOne\DotNetChampion\ConsoleExample2\obj\Debug\ConsoleExample2.pdb
+C:\Users\Eyael\Desktop\Pyramid\Pyramid's stuffs\Assignments\WeekOne\WeekOneCollective Assignments\ConsoleExample2\bin\Debug\ConsoleExample2.exe.config
+C:\Users\Eyael\Desktop\Pyramid\Pyramid's stuffs\Assignments\WeekOne\WeekOneCollective Assignments\ConsoleExample2\bin\Debug\ConsoleExample2.exe
+C:\Users\Eyael\Desktop\Pyramid\Pyramid's stuffs\Assignments\WeekOne\WeekOneCollective Assignments\ConsoleExample2\bin\Debug\ConsoleExample2.pdb
+C:\Users\Eyael\Desktop\Pyramid\Pyramid's stuffs\Assignments\WeekOne\WeekOneCollective Assignments\ConsoleExample2\obj\Debug\ConsoleExample2.csprojAssemblyReference.cache
+C:\Users\Eyael\Desktop\Pyramid\Pyramid's stuffs\Assignments\WeekOne\WeekOneCollective Assignments\ConsoleExample2\obj\Debug\ConsoleExample2.csproj.CoreCompileInputs.cache
+C:\Users\Eyael\Desktop\Pyramid\Pyramid's stuffs\Assignments\WeekOne\WeekOneCollective Assignments\ConsoleExample2\obj\Debug\ConsoleExample2.exe
+C:\Users\Eyael\Desktop\Pyramid\Pyramid's stuffs\Assignments\WeekOne\WeekOneCollective Assignments\ConsoleExample2\obj\Debug\ConsoleExample2.pdb
