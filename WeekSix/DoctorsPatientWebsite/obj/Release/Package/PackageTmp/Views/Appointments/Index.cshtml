@@ -1,0 +1,61 @@
+﻿@model IEnumerable<DoctorsPatientWebsite.Models.Appointment>
+
+@using DoctorsPatientWebsite.Models;
+
+@*@model Tuple<List<ConsultationSlot>, List<Appointment>>*@
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.doctor.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.docID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.appointmentHour)
+        </th>
+        
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.doctor.name)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.date)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.doctor.name)
+            </td>
+            <td>  @Html.DisplayFor(model => item.appointmentHour)</td>
+           
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.id })
+            </td>
+        </tr>
+    }
+
+</table>
+
+
+
+

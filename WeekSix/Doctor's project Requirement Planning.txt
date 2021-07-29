@@ -1,0 +1,123 @@
+Code first Approch mean?
+Audio.net aproch
+entityframework code first.
+entity framework database first.
+****************************************
+Enable-Migrations -ContextTypeName WebsiteForDoctors.Models.DoctorPatientContext
+
+Add-Migration
+
+Update-database
+******************************************
+
+Create a model 
+
+Doctor, Patient and Hospital
+
+login to everybody
+About the doc his specialzation and his picture fix appointment
+
+once we make an appointment it's filled out to the other patient
+
+there should be 1 hour break for every an appointment.
+
+Doctor
+id
+name
+clinic
+specialization.
+
+1 doctor list. 
+2 changes to date calandar.
+3 submit button.
+
+
+
+4 get the patient from user registration page. 
+
+
+4 confirmation email.
+
+
+Modal?
+datepicker?
+consultation slot!
+Temp Data?
+
+Tuple is not working. 
+
+
+First I need pick a date
+then I need to pick spec
+then list of doctors.
+calculate and get the available slots.
+submit to place the appointment 
+
+
+Add Paypal 
+razor pay
+User Authorization to customize. 
+
+
+system.net.mail
+
+var message = new MailMessage();
+message.from = new MailMessage("eyaeldeveloper@gmail.com");
+var recipient = "eyaelja1@gmail.com"
+
+message.Subject = "This is my subject";
+message.body = "This is the content";
+
+
+SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
+SmtpServer.Port = 587;
+SmtpServer.Credentials =
+new System.Net.NetworkCredential("eyaeldeveloper@gmail.com", "Eyaeldeveloper!");
+
+
+client.Send(message);
+return RedirectToAction("Index");
+
+
+azure account free 
+
+integrate book an appointment with my appointment
+
+
+Open the lacal database with azure credential???
+
+****************************************************************
+
+1, Appointments are not removing the existing appointment anymore...
+
+2, I don't want to see all appointments in the index after I made appointments.
+
+3, Doctors view, Patient view and Admin view should different be based on the login's role.
+
+4, I want to add the user email adress in the appointment controller when I make an appointment so that instead of getting every email it goes directly to people who made the appointments. 
+
+
+
+
+
+
+
+       
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       

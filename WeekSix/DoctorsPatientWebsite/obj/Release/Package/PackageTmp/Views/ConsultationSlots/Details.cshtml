@@ -1,0 +1,58 @@
+﻿@model DoctorsPatientWebsite.Models.ConsultationSlot
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ConsultationSlot</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.doctor.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.doctor.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dow)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dow)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.startTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.startTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.endTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.endTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.interval)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.interval)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

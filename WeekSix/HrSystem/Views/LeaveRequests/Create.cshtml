@@ -1,0 +1,75 @@
+﻿@model HrSystem.Models.LeaveRequest
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>LeaveRequest</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Date, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Date, "{0:yyyy-MM-dd}", new { @class = "form-control", @type = "date" })
+                @*@Html.EditorFor(model => model.Date, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.ValidationMessageFor(model => model.Date, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Catagory, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @*  @Html.EditorFor(model => model.Catagory, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.DropDownListFor(model => model.Catagory, new List<SelectListItem>
+    {
+                        new SelectListItem() {Text = "Select Catagory", Value="Select Catagory"},
+                        new SelectListItem() {Text = "Personal", Value="Personal"},
+                        new SelectListItem() {Text = "Family", Value="Family"},
+                        new SelectListItem() {Text = "Other", Value="Other"}
+
+    })
+                @Html.ValidationMessageFor(model => model.Catagory, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Reason, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @*@Html.EditorFor(model => model.Reason, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.DropDownListFor(model => model.Reason, new List<SelectListItem>
+   {
+                       new SelectListItem() {Text = "Select Reason", Value="Select Reason"},
+                       new SelectListItem() {Text = "Marriage Ceremony", Value="Marriage Ceremony"},
+                       new SelectListItem() {Text = "Illness", Value="Illness"},
+                       new SelectListItem() {Text = "Injury", Value="Injury"},
+                       new SelectListItem() {Text = "Vacation", Value="Vacation"},
+                       new SelectListItem() {Text = "Other", Value="Other"}
+
+   })
+                @Html.ValidationMessageFor(model => model.Reason, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

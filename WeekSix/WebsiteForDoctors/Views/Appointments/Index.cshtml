@@ -1,0 +1,151 @@
+﻿@model IEnumerable<WebsiteForDoctors.Models.Appointment>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.consultationSlot.id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.patient.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.date)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.consultationSlot.id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.patient.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.date)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.id })
+            </td>
+        </tr>
+    }
+
+
+
+
+
+</table>
+
+
+@{
+    ViewBag.Title = "Index";
+}
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/jquery-ui.js"></script>
+<script src="/build/jquery.datetimepicker.full.min.js"></script>
+
+<div id="calendar"></div>
+<div id="datetimepicker1"></div>
+
+<script>
+
+    $('#calendar').datepicker(
+        {
+            inline: true,
+            firstDay: 1,
+            changeMonth: false,
+            changeYear: true,
+            showOtherMonths: true,
+            showMonthAfterYear: false,
+            yearRange: "2015:2025",
+            dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+            dateFormat: "yy-mm-dd",
+            onSelect: function (date) {
+                alert(date);
+            }
+        });
+
+</script>
+
+
+
+
+
+<div><a href="javascript:openmodal();">Open modal</a></div>
+<div id="event_edit_container">
+    <form>
+        Date: <input type="text" id="datepicker" name="datepicker">
+    </form>
+</div>
+
+
+
+
+
+<p id="extradays" style="display:none">@ViewBag.days</p>
+@Html.DropDownList("Doctor", null, "Select", new { @class = "form-control" })
+
+
+<div class="container">
+    <h2>Modal Example</h2>
+
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                    <p>hi</p>
+
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" value="Submit" class="btn btn-primary" />
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 75%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 6px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>
+
+

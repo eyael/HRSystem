@@ -1,0 +1,44 @@
+﻿@model IEnumerable<BuyProduct.Models.Cart>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+
+<table class="table">
+    <p>
+        @Html.ActionLink("Add new Product", "Create")
+    </p>
+
+    
+
+    @foreach (var item in Model)
+    {
+        <tr>
+
+            <td>
+                <div class="card" style="width:400px">
+                    <img class="card-img-top" src="@Url.Content(item.product.imagePath)" width="100" alt="Card image">
+
+                    <div class="card-body">
+                        <h4 class="card-title">@item.product.name</h4>
+                        <input type="submit" value="confirm Purchase" class=" btn btn-default" />
+                        <a href="#" class="btn btn-primary">Buy This Product</a>
+                    </div>
+                </div>
+            </td>
+            <td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.id })
+            </td>
+
+
+            </td>
+        </tr>
+    }
+
+</table>

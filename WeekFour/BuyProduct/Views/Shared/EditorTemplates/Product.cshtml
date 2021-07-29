@@ -1,0 +1,21 @@
+﻿@model BuyProduct.Models.Product
+@{
+    ViewBag.Title = "Product";
+}
+
+@Html.HiddenFor(x => x.id)
+@Html.HiddenFor(x => x.name)
+@Html.HiddenFor(x => x.categID)
+@Html.HiddenFor(x => x.imagePath)
+
+<span>
+    @Html.DisplayFor(x => x.name)
+    @Html.DisplayFor(x => x.categ.name)
+    <img src=" @Url.Content(@Model.imagePath)" width="100px" />
+    @Html.CheckBoxFor(x => x.check)
+   
+
+</span>
+
+<h2>Catagory</h2>
+

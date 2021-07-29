@@ -1,0 +1,28 @@
+create database Patient
+
+CREATE TABLE PatientAppointment(
+	[AppointmentID] [int] IDENTITY(1,1) NOT NULL,
+	[PatientID] [int] NOT NULL,
+	[Date] [DateTime] NOT NULL,
+	[consultantName]  nvarchar(50) NOT NULL
+ CONSTRAINT [PK_PatientAppointment] PRIMARY KEY CLUSTERED 
+(
+	[AppointmentID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+select * from PatientAppointment
+
+insert into PatientAppointment values (54, 10/10/2020,'Diborah')
+
+select * from PatientAppointment
+
+delete from PatientAppointment where [AppointmentID] = 1
+
+select * from PatientAppointment
+
+update PatientAppointment set consultantName = 'Babi' where [AppointmentID] = 3
+
+select * from PatientAppointment

@@ -1,0 +1,19 @@
+﻿@model IEnumerable<BuyProduct.Models.Product>
+
+@{
+    ViewBag.Title = "productList";
+}
+
+<h2>productList</h2>
+
+@using (Html.BeginForm("Buy", "BuyProductt", FormMethod.Post))
+{
+
+
+
+    @Html.EditorForModel();
+    <input type="Submit" value="Submit" class=" btn btn-default" />
+}
+
+
+

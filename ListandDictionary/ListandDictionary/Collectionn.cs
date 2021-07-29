@@ -19,7 +19,7 @@ namespace ListandDictionary
             Console.WriteLine(Marks.Pop());
             Console.WriteLine(Marks.Peek());
 
-            int count = 4;
+            //int count = 4;
 
             foreach (var item in Marks)
             {
@@ -44,20 +44,8 @@ namespace ListandDictionary
                 Console.WriteLine(item);
             }
 
-            int k = 0;
-            int l = 1;
-            int m = 1;
-
-            Console.WriteLine("1 1");
-
-            while (k <= 50)
-            {
-                k = l + m;
-                Console.WriteLine(k + " ");
-                l = m;
-                m = k;
-
-            }
+            
+        
 
             Dictionary<int, Customer> dictionary = new Dictionary<int, Customer>();
             Customer p1 = new Customer();

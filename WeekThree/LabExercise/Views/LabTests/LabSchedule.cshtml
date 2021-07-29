@@ -1,0 +1,29 @@
+﻿@model IEnumerable<LabExercise.Models.LabTest>
+
+@{
+    ViewBag.Title = "LabSchedule";
+}
+
+<h2>LabSchedule</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@using(Html.BeginForm())
+{
+<select required name="patient" id="patient">
+    <option>Select</option>
+    <option value="PT1">PT1</option>
+    <option value="PT1">PT2</option>
+    <option value="PT1">PT3</option>
+
+</select>
+<input type="date" name="dstamp" id=" dstamp" />
+
+
+@Html.EditorForModel()
+
+  
+
+<input type="submit" value="Submit" class=" btn btn-primary" />
+}
